@@ -1,0 +1,42 @@
+.devbar {
+  background-color: #F2EEEB;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.social {
+  display: block;
+  list-style-type: none;
+}
+
+.navdoubleitems {
+  list-style-type: none;
+  align-items: baseline;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+.navdoubleitems a {
+  margin: 10px;
+  align-items: stretch;
+  align-self: stretch;
+}
+
+.navdoubleitems2 {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.social2 {
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.socialLinks {
+  color: gray;
+}
+
+.logo {
+  align-self: center;
+}
