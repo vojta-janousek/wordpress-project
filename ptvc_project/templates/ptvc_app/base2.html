@@ -4,24 +4,19 @@
   <head>
     <meta charset="utf-8">
     <title>Plastic Tree</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
-  <script>
-    var colors = ["red", "green"];
-    function styleTurn(colNum) {
-      document.getElementById("header1").style.backgroundColor = colors[colNum];
-    }
-  </script>
   <body>
-    <div class="container">
+    <div class="container fornav">
       <nav class="navbar navbar-light nav-fill devbar">
 
         <ul class="navdoubleitems2">
-          <li class="social2"><a class="socialLinks" href="#"><img href="www.google.com" src="{% static 'images/facebook.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
+          <li class="social2"><a class="socialLinks" href="https://www.facebook.com"><img href="" src="{% static 'images/facebook.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
           <li><div class="btn-group">
             <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Products
@@ -31,13 +26,13 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="{% url 'ptvc_app:pricing' %}">Product pricing</a>
             </div>
           </div></li>
         </ul>
 
         <ul class="navdoubleitems2">
-          <li class="social2"><a class="socialLinks" href="#"><img src="{% static 'images/twitter.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
+          <li class="social2"><a class="socialLinks" href="https://www.twitter.com"><img src="{% static 'images/twitter.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
           <li><div class="btn-group">
             <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
@@ -47,20 +42,20 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="">Service pricing</a>
             </div>
           </div></li>
         </ul>
 
-        <a class="navbar-brand logo" href="#"><img src="{% static "images/plast.png" %}" width="150" height="120" alt="Not found"></a>
+        <a class="navbar-brand logo" href="{% url 'ptvc_app:index' %}"><img src="{% static "images/plast.png" %}" width="150" height="120" alt="Not found"></a>
 
         <ul class="navdoubleitems2">
-          <li class="social2"><a class="socialLinks" href="#"><img src="{% static 'images/instagram.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
-          <li><a class="btn btn-outline-secondary" href="" role="button">About us</a></li>
+          <li class="social2"><a href="https://www.instagram.com" class="socialLinks"><img src="{% static 'images/instagram.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
+          <li><a class="btn btn-outline-secondary" href="{% url 'ptvc_app:about' %}" role="button">About us</a></li>
         </ul>
 
         <ul class="navdoubleitems2">
-          <li class="social2"><a class="socialLinks" href="#"><img src="{% static 'images/youtube.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
+          <li class="social2"><a class="socialLinks" href="https://www.youtube.com"><img src="{% static 'images/youtube.png' %}" width="30" height="30" class="d-inline-block align-center" alt="Not found">/plastictree</a></li>
           <li><a class="btn btn-outline-secondary" href="" role="button">Contact</a></li>
         </ul>
 

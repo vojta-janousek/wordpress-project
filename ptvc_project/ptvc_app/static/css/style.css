@@ -1,13 +1,13 @@
 .devbar {
   background-color: #F2EEEB;
+  border-radius: 5px;
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
 }
 
-.social {
-  display: block;
-  list-style-type: none;
+.fornav {
+  border-radius: 5px;
 }
 
 .navdoubleitems {
@@ -39,4 +39,8 @@
 
 .logo {
   align-self: center;
+}
+
+.aboutTable td {
+  border: 5px solid black;
 }

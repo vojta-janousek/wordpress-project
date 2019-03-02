@@ -1,0 +1,76 @@
+{% extends 'ptvc_app/base2.html' %}
+{% load static %}
+{% block mainblock %}
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/about_style.css' %}">
+
+<table>
+  <tr>
+    <td><h1><strong>The power of teamwork</strong></h1></td>
+    <td><h1><strong>Product headline</strong></h1></td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        Behind every great human achievement, there is a team.
+        From medicine and space travel, to disaster response and pizza deliveries,
+        our products help teams all over the planet advance humanity through the power of software.
+        Our mission is to help unleash the potential of every team through open work.
+
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nullam sapien sem, ornare ac, nonummy non, lobortis a enim.
+        Sed convallis magna eu sem. Etiam quis quam. Aliquam ante.
+        Praesent in mauris eu tortor porttitor accumsan.
+        Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.
+        Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.
+        Aenean placerat. Nullam dapibus fermentum ipsum.
+        Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus.
+        Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.
+        Duis viverra diam non justo. Integer lacinia. Integer vulputate sem a nibh rutrum consequat.
+        Pellentesque pretium lectus id turpis. Cras pede libero, dapibus nec, pretium sit amet, tempor quis.
+        In rutrum. Nam quis nulla.
+      </p>
+    </td>
+    <td><img src="{% static 'images/aboutus.jpg' %}" width="560" height="450" alt="Not found"></td>
+  </tr>
+  <tr>
+    <td><img src="{% static 'images/plast.png' %}" width="560" height="450" alt="Not found"></td>
+    <td>
+      <table>
+        <tr>
+          <td><img src="{% static 'images/first.png' %}" width="150" height="150" alt="Not found"></td>
+          <td>
+            <h2>Elemer Goulash</h2>
+            <p>
+              CEO of Plastic Tree <br>
+              goulash@plastictree.com
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{% static 'images/second.png' %}" width="150" height="150" alt="Not found"></td>
+          <td>
+            <h2>Random Randomsson</h2>
+            <p>
+              Senior developer <br>
+              randomsson@plastictree.com
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{% static 'images/third.png' %}" width="150" height="150" alt="Not found"></td>
+          <td>
+            <h2>John Smith</h2>
+            <p>
+              Product manager <br>
+              smith@plastictree.com
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+{% endblock %}
