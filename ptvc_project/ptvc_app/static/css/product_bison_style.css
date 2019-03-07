@@ -1,0 +1,38 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+table td {
+  border-left: 100px solid white;
+  border-right: 100px solid white;
+  border-radius: 50px;
+}
+
+.secondRow {
+  background-color: #d0d8e5;
+  border: 2px solid black;
+}
+
+.rest-method-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rest-method-table th {
+  background-color: black;
+  color: white;
+}
+
+.rest-method-table td, .rest-method-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.rest-method-table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.rest-method-table tr:hover {
+  background-color: #ddd;
+}

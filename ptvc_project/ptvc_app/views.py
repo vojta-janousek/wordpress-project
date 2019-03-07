@@ -9,5 +9,5 @@ class AboutView(TemplateView):
     template_name = 'ptvc_app/aboutus.html'
 
 
-class PricingView(TemplateView):
-    template_name = 'ptvc_app/product_pricing.html'
+class ProductBisonView(TemplateView):
+    template_name = 'ptvc_app/product_bison.html'
