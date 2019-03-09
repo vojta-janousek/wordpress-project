@@ -6,6 +6,24 @@
   border-right: 1px solid gray;
 }
 
+.devbar2 {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+#fsizesmall {
+  font-size: 8px;
+}
+
+.whitefont {
+  color: white;
+}
+
 .fornav {
   border-radius: 5px;
 }
