@@ -1,6 +1,25 @@
-.carousel-item{
-    height: 600px;
+body {
+  margin: 0;
+  font-size: 17px;
+  color: #484d4d;
 }
-.carousel-item img{
-    height: 600px;
+
+#showcase {
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 50px;
+}
+
+#showcase p {
+  font-size: 20px;
 }

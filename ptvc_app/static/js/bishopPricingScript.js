@@ -1,9 +1,9 @@
 function infoBoxFunc(val) {
   if (val === 0) {
-    window.alert("Some text");
+    window.alert("On-premise software is installed locally, on a company's own computers and servers.");
   }
   else {
-    window.alert("Some other text");
+    window.alert("Cloud-based software is hosted on the vendor's servers and accessed through a web browser.");
   }
 }
 

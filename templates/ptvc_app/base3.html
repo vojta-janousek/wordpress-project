@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Developer Tools</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base3.css' %}">
+  </head>
+  <body>
+    <nav class="navbar navbar-light" style="background-color: #484d4d;">
+      <div class="container">
+
+
+      <a class="navbar-brand" href="{% url 'ptvc_app:index' %}">
+        <img src="{% static 'images/cog_logo_inv.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Not found">
+        <strong class="navbar-style">PlasticTree</strong>
+      </a>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Catalog
+        </button>
+        <div class="dropdown-menu">
+          <h6 class="dropdown-header">Products</h6>
+          <a class="dropdown-item" href="{% url 'ptvc_app:product_bishop' %}">Bishop API</a>
+          <a class="dropdown-item" href="#">Product 2</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Services</h6>
+          <a class="dropdown-item" href="#">Service 1</a>
+          <a class="dropdown-item" href="#">Service 2</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Support
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">FAQ</a>
+          <a class="dropdown-item" href="#">Helpdesk</a>
+          <a class="dropdown-item" href="#">Ask a question</a>
+        </div>
+      </div>
+
+      <a class="nav-item navbar-style" href="{% url 'ptvc_app:about' %}">About us</a>
+      <a class="nav-item navbar-style" href="{% url 'ptvc_app:contact' %}">Contacts</a>
+
+      <h4 class="navbar-style">|</h4>
+
+      <img src="{% static 'images/magnifier.png' %}" height="20" width="20" alt="Not found">
+      <img src="{% static 'images/login.png' %}" height="20" width="20" alt="Not found">
+
+      </div>
+    </nav>
+    <br><br>
+
+    <div class="container">
+      {% block mainblock %}
+      {% endblock %}
+    </div>
+
+    <br><br>
+
+    <nav class="navbar navbar-light" style="background-color: #ced3db;">
+      <div class="container">
+        <a href="{% url 'ptvc_app:index' %}">
+          <img class="d-inline-block align-center" src="{% static 'images/home.png' %}" width="20" height="20" alt="Not found">
+        </a>
+        <span class="footspan">|</span>
+        <span class="footspan">Copyright © 2019 PlasticTree. All rights reserved.</span>
+        <span class="footspan">|</span>
+        <a class="footerfont" href="{% url 'ptvc_app:under_construction' %}">Privacy Policy</a>
+        <span class="footspan">|</span>
+        <a class="footerfont" href="{% url 'ptvc_app:under_construction' %}">Terms of Use</a>
+        <span class="footspan">|</span>
+        <a href="https://www.facebook.com"><img class="d-inline-block align-center" src="{% static 'images/facebook.png' %}" width="30" height="30" alt="Not found"></a>
+        <a href="https://www.twitter.com"><img class="d-inline-block align-center" src="{% static 'images/twitter.png' %}" width="30" height="30" alt="Not found"></a>
+        <a href="https://www.instagram.com"><img class="d-inline-block align-center" src="{% static 'images/instagram.png' %}" width="30" height="30" alt="Not found"></a>
+        <a href="https://www.youtube.com"><img class="d-inline-block align-center" src="{% static 'images/youtube.png' %}" width="30" height="30" alt="Not found"></a>
+
+      </div>
+    </nav>
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+}
+
+.contact-table td {
+  padding-bottom: 20px;
+  margin: 20px;
+  border: 40px solid white;
+}

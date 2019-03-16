@@ -1,0 +1,13 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-style {
+  color: white;
+}
+
+.footerfont, .footspan {
+  color: #484d4d;
+  display: inline-block;
+  vertical-align: middle;
+}
