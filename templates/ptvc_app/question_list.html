@@ -1,0 +1,22 @@
+{% extends 'ptvc_app/base3.html' %}
+{% load static %}
+{% block mainblock %}
+
+<h1>Your latest questions</h1>
+<br>
+<a class="btn btn-primary" href="{% url 'ptvc_app:new_question' %}" role="button">New Question</a>
+<br>
+<hr>
+<br><br>
+
+
+{% for question in object_list %}
+  <h3>Q: {{ question.question }}</h3>
+  <h5>Subject: {{ question.subject }}</h5>
+  <br>
+  <p>A: {{ question.answer }}</p>
+  <hr>
+  <br>
+{% endfor %}
+
+{% endblock %}
