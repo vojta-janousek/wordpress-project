@@ -19,3 +19,15 @@ class UnderConstructionView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = 'ptvc_app/contact.html'
+
+
+class FaqView(TemplateView):
+    template_name = 'ptvc_app/faq.html'
+
+
+class AskView(TemplateView):
+    template_name = 'ptvc_app/ask.html'
+
+
+class ProductHeadlineView(TemplateView):
+    template_name = 'ptvc_app/product_headline.html'
