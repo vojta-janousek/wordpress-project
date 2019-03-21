@@ -43,6 +43,8 @@ class Employee(models.Model):
     expertise = models.ManyToManyField(Subject)
     days = models.ManyToManyField(Day)
     role = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100, default="me@plastictree.com")
+    phone = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.name
