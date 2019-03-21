@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView, ListView, CreateView
 from django.contrib import messages
 
-from ptvc_app.models import Contact
+from ptvc_app.models import Contact, Employee, Day
 from ptvc_app.forms import AddQuestionForm
 
 # Create your views here.
@@ -44,7 +44,13 @@ class AddQuestionView(CreateView):
     model = Contact
 
 
-class HelpdeskView(TemplateView):
+class HelpdeskView(ListView):
     template_name = 'ptvc_app/helpdesk.html'
+    queryset = Employee.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['day_list'] = Day.objects.all()
+        return context
 
 # -----------------------------------------------

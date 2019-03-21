@@ -4,4 +4,15 @@
 
 <p>HelpDesk</p>
 
+{% for workday in day_list %}
+  <p><strong>{{ workday.day }}</strong></p>
+  {% for employee in object_list %}
+    {% if workday in employee.days.all %}
+      <p>{{ employee.name }}</p>
+      <p>{{ employee.role }}</p>
+    {% endif %}
+  {% endfor %}
+  <hr>
+{% endfor %}
+
 {% endblock %}
