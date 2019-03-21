@@ -2,9 +2,137 @@
 {% load static %}
 {% block mainblock %}
 
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'css/product_headline_style.css' %}">
 
-<p>yo yo</p>
+
+<h1 id="headline-header"><strong>Products for teams, from startup to enterprise</strong></h1>
+<br>
+
+<table class="headline-table">
+  <tr>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Bishop API</strong></h2>
+          <img src="{% static 'images/headline_bishop.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li>Create a database driven <strong>RESTful</strong> web application</li>
+              <li><strong>Convert</strong> your HTTP methods into universal methods</li>
+              <li>Get the most out of the fast-growing <strong>JSON format</strong></li>
+              <li>Use our Cloud services to <strong>outsource maintenance</strong></li>
+            </ul>
+          </div>
+          <br>
+          <a href="{% url 'ptvc_app:product_bishop' %}" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Bishop CSE</strong></h2>
+          <img src="{% static 'images/headline_code.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li>Use our accurate code <strong>stylization</strong> enforcer</li>
+              <li>Allow for a <strong>dynamic</strong> code transformation</li>
+              <li>Make no more mistakes with <strong>Python and Java</strong></li>
+              <li>Convert your existing code with <strong>linting</strong> tool</li>
+            </ul>
+          </div>
+          <br>
+          <a href="" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Genie Tasks</strong></h2>
+          <img src="{% static 'images/headline_task.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li><strong>Manage</strong> your projects with our tasking application</li>
+              <li>Create <strong>WorkFlows</strong> for your individual task types</li>
+              <li>Enforce user <strong>permissions</strong> on all of your projects</li>
+              <li>Download extra <strong>add-ons</strong> to increase functionality</li>
+            </ul>
+          </div>
+          <br>
+          <a href="{% url 'ptvc_app:under_construction' %}" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Genie Versions</strong></h2>
+          <img src="{% static 'images/headline_version.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li>Allow your team to use a <strong>version control</strong> tool</li>
+              <li>Enable <strong>co-authoring</strong> on all of your current code</li>
+              <li>Continuously <strong>backup</strong> all files preventing any loss</li>
+              <li>Enjoy a full <strong>compatibility</strong> with Git and Bitbucket</li>
+            </ul>
+          </div>
+          <br>
+          <a href="{% url 'ptvc_app:under_construction' %}" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Genie Analytics</strong></h2>
+          <img src="{% static 'images/headline_analytics.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li>Make data <strong>analysis</strong> easier using our data tools</li>
+              <li><strong>Convert</strong> data from any format to an array series</li>
+              <li><strong>Process, analyze and visualize</strong> in a few seconds</li>
+              <li>Predict future outcomes using <strong>machine learning</strong></li>
+            </ul>
+          </div>
+          <br>
+          <a href="" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" id="product-name-font"><strong>Schemes & Themes</strong></h2>
+          <img src="{% static 'images/headline_schemes.png' %}" width="70" height="70" alt="Not found">
+          <br><br>
+          <div class="bullets">
+            <ul>
+              <li><strong>Convert</strong> your web applications into a full website</li>
+              <li>Discover new out-of-the-box <strong>FrontEnd</strong> functionalities</li>
+              <li>Use layouts and color schemes for better <strong>presentation</strong></li>
+              <li>Enjoy myriad color scheme options and <strong>customizations</strong></li>
+            </ul>
+          </div>
+          <br>
+          <a href="{% url 'ptvc_app:under_construction' %}" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
 
 
 {% endblock %}

@@ -44,4 +44,7 @@ class AddQuestionView(CreateView):
     model = Contact
 
 
+class HelpdeskView(TemplateView):
+    template_name = 'ptvc_app/helpdesk.html'
+
 # -----------------------------------------------

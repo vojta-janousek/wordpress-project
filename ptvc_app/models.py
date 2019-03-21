@@ -25,3 +25,24 @@ class Contact(models.Model):
 
     def __str__(self):
         return (self.question)[:20] + '...'
+
+
+class Day(models.Model):
+    '''
+    '''
+    day = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.day
+
+
+class Employee(models.Model):
+    '''
+    '''
+    name = models.CharField(max_length=50)
+    expertise = models.ManyToManyField(Subject)
+    days = models.ManyToManyField(Day)
+    role = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
