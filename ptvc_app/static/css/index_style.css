@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-size: 17px;
-  color: #484d4d;
+  color: black;
+  line-height: 1.6;
 }
 
 #showcase {
@@ -14,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 20px;
 }
 
 #showcase h1 {
@@ -22,4 +29,13 @@ body {
 
 #showcase p {
   font-size: 20px;
+}
+
+#fancy-font {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+#content-links a {
+  font-size: 20px;
+  color: white;
 }

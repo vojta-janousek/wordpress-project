@@ -2,14 +2,56 @@
 {% load static %}
 {% block mainblock %}
 
-<p>HelpDesk</p>
+<style>
+
+body {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+</style>
+
+<script>
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+</script>
+
+<h1>Contact our support team</h1>
+<br><hr>
 
 {% for workday in day_list %}
-  <p><strong>{{ workday.day }}</strong></p>
+  <h2><strong>{{ workday.day }}</strong></h2>
   {% for employee in object_list %}
     {% if workday in employee.days.all %}
-      <p>{{ employee.name }}</p>
-      <p>{{ employee.role }}</p>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{% static 'images/avatar.png' %}" class="card-img" alt="Not found">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><strong>{{ employee.name }}</strong></h5>
+              <h5 class="card-title">{{ employee.role }}</h5>
+              <hr>
+              <button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true"
+                data-content="
+                  {% for exp in employee.expertise.all %}
+                    {{ exp }}
+                    <hr>
+                  {% endfor %}
+                ">Expertise</button>
+              <button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" data-placement="right" data-html="true" data-content="Email: {{ employee.email }} <hr> Phone: +56 {{ employee.phone }}">
+                Contact
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     {% endif %}
   {% endfor %}
   <hr>

@@ -2,12 +2,56 @@
 {% load static %}
 {% block mainblock %}
 
+<style>
+
+body {
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form-table {
+  width: 100%;
+}
+
+#contact-form-table td {
+  border: 40px solid white;
+  width: 50%;
+}
+
+#form-border-id {
+  border: 3px solid black;
+}
+
+</style>
+
+
 <h1>Ask a new question</h1>
 <br>
-<form class="post-form" method="post">
+<form class="post-form" id="form-border-id" method="post">
   {% csrf_token %}
-  {{ form.as_p }}
+  <table id="contact-form-table">
+    <tr>
+      <td style="text-align: right;"><h3>Name:</h3></td>
+      <td style="text-align: left;">{{ form.name }}</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;"><h3>Subject:</h3></td>
+      <td style="text-align: left;">{{ form.subject }}</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;"><h3>Email:</h3></td>
+      <td style="text-align: left;">{{ form.email }}</td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <br>
+  <h2>Your question here:</h2>
+  <br>
+  {{ form.question }}
+  <br><br>
   <button type="submit" class="save btn btn-primary">Post</button>
+  <br><br>
 </form>
 
 {% endblock %}
