@@ -1,0 +1,32 @@
+{% extends 'ptvc_app/base3_nofooter.html' %}
+{% load static %}
+{% block mainblock %}
+
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<br>
+<h1>Table of contents:</h1>
+<br>
+
+
+<a href="{% url 'ptvc_app:index' %}">Home</a><br>
+<a href="{% url 'ptvc_app:contact' %}">Contacts</a><br>
+<a href="{% url 'ptvc_app:about' %}">About us</a><br>
+<a href="{% url 'ptvc_app:faq' %}">Frequently asked questions</a><br>
+<a href="{% url 'ptvc_app:question_list' %}">Your questions</a><br>
+<a href="{% url 'ptvc_app:helpdesk' %}">HelpDesk</a><br>
+<a href="{% url 'ptvc_app:product_headline' %}">Product Headline</a><br>
+<a href="{% url 'ptvc_app:product_bishop' %}">Product: Bishop API</a><br>
+<a href="{% url 'ptvc_app:product_cse' %}">Product: Bishop CSE</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Product: Genie Tasks</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Product: Genie Versions</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Product: Genie Analytics</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Product: Schemes & Themes</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Terms of use</a><br>
+<a href="{% url 'ptvc_app:under_construction' %}">Privacy policy</a><br>
+<a href="{% url 'admin:index' %}">Login</a><br>
+
+{% endblock %}

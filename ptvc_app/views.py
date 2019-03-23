@@ -17,6 +17,10 @@ class ProductBishopView(TemplateView):
     template_name = 'ptvc_app/product_bishop.html'
 
 
+class ProductCseView(TemplateView):
+    template_name = 'ptvc_app/product_cse.html'
+
+
 class UnderConstructionView(TemplateView):
     template_name = 'ptvc_app/under_construction.html'
 
@@ -31,6 +35,10 @@ class FaqView(TemplateView):
 
 class ProductHeadlineView(TemplateView):
     template_name = 'ptvc_app/product_headline.html'
+
+
+class SearchFeatureView(TemplateView):
+    template_name = 'ptvc_app/search_feature.html'
 
 
 class QuestionView(ListView):

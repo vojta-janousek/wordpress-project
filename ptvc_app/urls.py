@@ -14,4 +14,6 @@ urlpatterns = [
     re_path(r'^your-questions/$', views.QuestionView.as_view(), name='question_list'),
     re_path(r'^your-questions/new-question/$', views.AddQuestionView.as_view(), name='new_question'),
     re_path(r'^helpdesk/$', views.HelpdeskView.as_view(), name='helpdesk'),
+    re_path(r'^search/$', views.SearchFeatureView.as_view(), name='search'),
+    re_path(r'^cse/$', views.ProductCseView.as_view(), name='product_cse'),
 ]

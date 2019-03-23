@@ -1,0 +1,29 @@
+{% extends 'ptvc_app/base3.html' %}
+{% load static %}
+{% block mainblock %}
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/product_bishop_style.css' %}">
+<script type="text/javascript" src="{% static 'js/bishopPricingScript.js' %}"></script>
+
+<h1>Bishop CSE</h1>
+<br>
+<img src="{% static 'images/bishop.png' %}" width="100" height="100" alt="Not found">
+<br><br>
+<p>
+  REST's client–server separation of concerns simplifies component implementation, <br>
+  reduces the  complexity of  connector semantics,  improves  the effectiveness of <br>
+  performance tuning,  and increases  the scalability  of pure server  components. <br>
+  Layered system constraints allow intermediaries—proxies, gateways, and firewalls <br>
+  — to be introduced  at various points in the  communication without changing the <br>
+  interfaces  between components, thus  allowing them to  assist in  communication <br>
+  translation or improve performance via large-scale, shared caching. REST enables <br>
+  intermediate   processing  by  constraining  messages  to  be  self-descriptive: <br>
+  interaction is stateless between requests,  standard methods and media types are <br>
+  used to  indicate semantics and  exchange information,  and responses explicitly <br>
+  indicate cacheability. <br>
+</p>
+<br><br>
+
+
+{% endblock %}
